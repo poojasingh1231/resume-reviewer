@@ -12,6 +12,7 @@ A modern, privacy-first web application that leverages AI to instantly review re
 - ✅ **Actionable Improvements:** Side-by-side "Original vs. Improved" text comparisons that explain *why* the changes matter.
 - 🌗 **Premium UI/UX:** Fully responsive, modern dashboard design with seamless Light/Dark mode toggling.
 
+
 ## 🛠️ Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/) (App Router, React 19)
