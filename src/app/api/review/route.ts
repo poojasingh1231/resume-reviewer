@@ -7,6 +7,10 @@ export const maxDuration = 60;
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.GOOGLE_GENERATIVE_AI_API_KEY) {
+      return new Response(JSON.stringify({ error: "Missing GOOGLE_GENERATIVE_AI_API_KEY environment variable. Please add it to your Vercel project." }), { status: 500 });
+    }
+
     const { text } = await req.json();
 
     if (!text || typeof text !== "string") {
