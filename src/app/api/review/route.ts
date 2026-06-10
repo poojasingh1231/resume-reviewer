@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     }
 
     const result = streamObject({
-      model: google("gemini-1.5-flash"),
+      model: google("gemini-2.5-flash-lite"),
       temperature: 0,
       schema: reviewSchema,
       prompt: `You are an expert ATS (Applicant Tracking System) and senior technical recruiter.
